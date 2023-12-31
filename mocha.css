@@ -1,0 +1,7 @@
+::root {
+    --base: #1e1e2e;
+}
+
+.slide {
+    background-color: var(--base);
+}
