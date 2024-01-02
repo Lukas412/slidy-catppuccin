@@ -1,7 +1,77 @@
-::root {
-    --base: #1e1e2e;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
+:root {
+    --cp-rosewater: #f5e0dc;
+    --cp-flamingo: #f2cdcd;
+    --cp-pink: #f5c2e7;
+    --cp-mauve: #cba6f7;
+    --cp-red: #f38ba8;
+    --cp-maroon: #eba0ac;
+    --cp-peach: #fab387;
+    --cp-yellow: #f9e2af;
+    --cp-green: #a6e3a1;
+    --cp-teal: #94e2d5;
+    --cp-sky: #89dceb;
+    --cp-sapphire: #74c7ec;
+    --cp-blue: #89b4fa;
+    --cp-lavender: #b4befe;
+    --cp-text: #cdd6f4;
+    --cp-subtext1: #bac2de;
+    --cp-subtext0: #a6adc8;
+    --cp-overlay2: #9399b2;
+    --cp-overlay1: #7f849c;
+    --cp-overlay0: #6c7086;
+    --cp-surface2: #585b70;
+    --cp-surface1: #45475a;
+    --cp-surface0: #313244;
+    --cp-base: #1e1e2e;
+    --cp-mantle: #181825;
+    --cp-crust: #11111b;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--cp-base);
+    color: var(--cp-text);
+    font-weight: normal;
+}
+
+h1 {
+    color: var(--cp-text);
+    font-weight: lighter;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 2px;
+    margin-top: 16px;
+    background-color: var(--cp-lavender);
 }
 
 .slide {
-    background-color: var(--base);
+    height: 100vh;
+}
+
+div.toolbar {
+    background-color: var(--cp-mantle);
+    color: var(--cp-subtext0);
+    padding-block: 8px;
+    border: none;
+}
+
+div.toolbar a:link,
+div.toolbar a:visited {
+    color: var(--cp-subtext0);
+}
+
+div.initial_prompt {
+    font-weight: lighter;
+    opacity: 1;
+    background: var(--cp-surface0);
+    color: var(--cp-text);
+    margin-bottom: 32px;
 }
